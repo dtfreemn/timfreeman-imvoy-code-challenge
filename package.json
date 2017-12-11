@@ -1,0 +1,27 @@
+{
+  "name": "timfreemancodechallenge",
+  "version": "1.0.0",
+  "description": "Setting up to use mocha and chai",
+  "main": "terminal.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dtfreemn/voyat-code-challenge.git"
+  },
+  "keywords": [
+    "mocha",
+    "chai"
+  ],
+  "author": "Tim Freeman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dtfreemn/voyat-code-challenge/issues"
+  },
+  "homepage": "https://github.com/dtfreemn/voyat-code-challenge#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
