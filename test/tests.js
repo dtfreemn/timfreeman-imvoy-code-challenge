@@ -1,5 +1,5 @@
-var tester = require('../tester.js').main.tester
-var assert = require('chai').assert
+const tester = require('../tester.js').main.tester
+const assert = require('chai').assert
 
 
 describe("Test one -- ABCDABAA", function() {
