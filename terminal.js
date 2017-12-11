@@ -1,18 +1,3 @@
-// A | $2.00 each or 4 for $7.00
-
-// B | $12.00
-
-// C | $1.25 or $6 for a six pack
-
-// D | $0.15
-
-let reference = {
-  A: {price: 2, volume: {quantity: 4, price: 7}},
-  B: {price: 12},
-  C: {price: 1.25, volume: {quantity: 6, price: 6}},
-  D: {price: .15}
-}
-
 class Terminal {
   constructor(PricingInfo) {
     this.prices = PricingInfo
@@ -49,9 +34,16 @@ class Terminal {
   }
 }
 
+
+let priceReference = {
+  A: {price: 2, volume: {quantity: 4, price: 7}},
+  B: {price: 12},
+  C: {price: 1.25, volume: {quantity: 6, price: 6}},
+  D: {price: .15}
+}
 function tester(testString) {
   let splitTest = testString.split('')
-  let t = new Terminal(reference)
+  let t = new Terminal(priceReference)
   
   splitTest.forEach(item => t.scan(item))
   return t.total()
@@ -60,8 +52,3 @@ function tester(testString) {
 exports.tester = {
   tester: tester
 }
-
-
-tester("ABCDABAA")
-tester("CCCCCCC")
-tester("ABCD")
