@@ -3,19 +3,25 @@ const assert = require('chai').assert
 
 
 describe("Test one -- ABCDABAA", function() {
-  it('should return a total of $32.40 when it is scanned in that order', function() {
-    assert("$32.40", tester("ABCDABAA"))
+  let string = "ABCDABAA"
+  let total = "$32.40"
+  it(`should return a total of $${total} when it is scanned in that order`, function() {
+    assert(total, tester(string))
   })
 })
 
 describe("Test two -- CCCCCCC", function() {
-  it('should return a total of $7.25 when it is scanned in that order', function() {
-    assert("$7.25", tester("CCCCCCC"))
+  let string = "CCCCCCC"
+  let total = "$7.25"
+  it(`should return a total of $${total} when it is scanned in that order`, function() {
+    assert(total, tester(string))
   })
 })
 
 describe("Test two -- ABCD", function() {
-  it('should return a total of $15.40 when it is scanned in that order', function() {
-    assert("$15.40", tester("ABCD"))
+  let string = "ABCD"
+  let total = "15.40"
+  it(`should return a total of $${total} when it is scanned in that order`, function() {
+    assert(total, tester(string))
   })
 })
