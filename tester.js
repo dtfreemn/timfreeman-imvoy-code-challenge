@@ -2,9 +2,11 @@ const Terminal = require('./terminal.js').main.terminal
 
 let priceReference = {
   A: {
-    price: 2, volume: {
+    price: 2,
+    volume: {
       quantity: 4,
-      price: 7}
+      price: 7
+    }
   },
   B: {
     price: 12

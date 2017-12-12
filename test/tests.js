@@ -15,7 +15,7 @@ describe("Test two -- CCCCCCC", function() {
 })
 
 describe("Test two -- ABCD", function() {
-  it('should return a total of $7.25 when it is scanned in that order', function() {
+  it('should return a total of $15.40 when it is scanned in that order', function() {
     assert("$15.40", tester("ABCD"))
   })
 })
